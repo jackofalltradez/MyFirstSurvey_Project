@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>My First Survey Form</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link  rel="stylesheet" href="./style/surveyForm.css">
   </head>
   <body>
@@ -17,37 +14,44 @@
       <form id="survey-form">
         <div class="form-group">
           <label id="name-label" for="name">Name</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
-            <div pseudo="placeholder">Enter your name</div>
-            <div contenteditable="plaintext-only"></div>
-          </input>
+          <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            class="form-control" 
+            placeholder="Enter your name" 
+            required 
+          />
         </div>
         <div class="form-group">
           <label id="email-label" for="email">Email</label>
-          <input type="text" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
-            <div pseudo="placeholder">Enter your Email</div>
-            <div contenteditable="plaintext-only"></div>
-          </input>
+          <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            class="form-control" 
+            placeholder="Enter your Email" 
+            required 
+          />
         </div>
         <div class="form-group">
           <label id="number-label" for="number">
               Age
             <span class="clue">(optional)</span>
           </label>
-          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
-            <div pseudo="placeholder">Age</div>
-            <div pseudo="-webkit-textfield-decoration-container">
-              <div>
-                <div contenteditable="plaintext-only">14</div>
-              </div>
-              <div pseudo="-webkit-inner-spin-button"></div>
-              <div pseudo="-webkit-list-button" style="display: none !important;"></div>
-            </div>
-          </input>
+          <input 
+            type="number" 
+            name="age" 
+            id="number" 
+            min="10" 
+            max="99" 
+            class="form-control" 
+            placeholder="Age" 
+          />
         </div>
         <div class="form-group">
           <p>Which option best describes your current role?</p>
-          <select id="dropdown" name="role" class="form-control" required>_</select>
+          <select id="dropdown" name="role" class="form-control" required>
             <option disabled selected value>Select current role</option>
             <option value="student">Student</option>
             <option value="job">Full Time Job</option>
@@ -56,21 +60,39 @@
             <option value="other">Other</option>
           </select>
         </div>
+
         <div class="form-group">
           <p>Would you recommend my Survey to a friend?</p>
           <label>
-            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+            <input 
+              name="user-recommend" 
+              value="definitely" 
+              type="radio" 
+              class="input-radio" 
+              checked 
+            />
             Definitely
           </label>
           <label>
-            <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+            <input 
+              name="user-recommend" 
+              value="maybe" 
+              type="radio" 
+              class="input-radio"
+            />
               Maybe
           </label>
           <label>
-            <input name="user-recommend" value="not-sure" type="radio" class="input-radio">
-              Not sure
+            <input 
+              name="user-recommend" 
+              value="not-sure" 
+              type="radio" 
+              class="input-radio"
+            />
+                Not sure
           </label>
         </div>
+
         <div class="form-group">
           <p>What is your favorite reason for choosing a career in Software Engineering?</p>
           <select id="most-like" name="mostlike" class="form-control" required>
@@ -82,61 +104,120 @@
             <option value="openSource">Open Source</option>
           </select>
         </div>
+
         <div class="form-group">
           <p>
             Which are your favorite Roles and/or Interest?
             <span class="clue">(Check all that apply)</span>
           </p>
           <label>
-            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="front-end-projects" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Front-end-Projects
           </label>
-          <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">
+          <label>
+            <input 
+              name="prefer" 
+              value="back-end-projects" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Back-end-Projects
           </label>
           <label>
-            <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="data-visualization" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Data Visualization
           </label>
           <label>
-            <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="challenges" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Challenges
           </label>
           <label>
-            <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="open-source-community" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Open Source Community
           </label>
           <label>
-            <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="gitter-help-rooms" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Gitter help rooms
           </label>
           <label>
-            <input name="prefer" value="videos" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="videos" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Videos
           </label>
           <label>
-            <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="city-meetups" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             City Meetups
           </label>
           <label>
-            <input name="prefer" value="wiki" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="wiki" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Wiki
           </label>
           <label>
-            <input name="prefer" value="forum" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="forum" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Forum
           </label>
           <label>
-            <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">
+            <input 
+              name="prefer" 
+              value="additional-courses" 
+              type="checkbox" 
+              class="input-checkbox"
+            />
             Additional Courses
           </label>
         </div>
         <div class="form-group">
           <p>Any comments or suggestions?</p>
-          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
-            <div contenteditable="plaintext-only"></div>
-            <div pseudo="placeholder">Enter your comment here...</div>
-          </textarea>
+          <textarea 
+            id="comments" 
+            class="input-textarea" 
+            name="comment" 
+            placeholder="Enter your comment here..."
+          ></textarea>
         </div>
         <div class="form-group">
           <button type="submit" id="submit" class="submit-button"> Submit </button>
